@@ -1,7 +1,10 @@
-import { StyleSheet } from "react-native";
+import { useNavigation } from "@react-navigation/native";
+import { StyleSheet, Button } from "react-native";
 import { Text, View } from "../components/Themed";
 
 export default function TabTwoScreen() {
+  const navigation = useNavigation();
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Entry Page</Text>
@@ -18,6 +21,10 @@ export default function TabTwoScreen() {
         >
           This is where we make journal entries
         </Text>
+        <Button
+          title="New Entry"
+          onPress={() => navigation.navigate("Modal")}
+        />
       </View>
     </View>
   );
@@ -32,6 +39,8 @@ const styles = StyleSheet.create({
   getStartedContainer: {
     alignItems: "center",
     marginHorizontal: 50,
+    borderWidth: 1,
+    borderColor: "white",
   },
   getStartedText: {
     fontSize: 17,
