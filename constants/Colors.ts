@@ -6,12 +6,13 @@ const common = {
   warning: "#a44a3f",
   accentBlack: "#040f16",
   accentWhite: "#f4ebe8",
+  textBackground: "#fafafa",
 };
 
 export default {
   light: {
     text: "#000",
-    background: "#fff",
+    background: "#ececec",
     tint: tintColorLight,
     tabIconDefault: "#ccc",
     tabIconSelected: tintColorLight,
@@ -19,7 +20,7 @@ export default {
   },
   dark: {
     text: "#fff",
-    background: "#000",
+    background: "#0a0a0a",
     tint: tintColorDark,
     tabIconDefault: "#ccc",
     tabIconSelected: tintColorDark,
